@@ -20,8 +20,8 @@ jobs:
         with:
           gradle-version: '8.9'
       - run: gradle --no-daemon :app:assembleDebug
-      - run: cp app/build/outputs/apk/debug/app-debug.apk PSEI_Entrevistas_v1_9.apk
+      - run: cp app/build/outputs/apk/debug/app-debug.apk PSEI_Entrevistas_v1_10.apk
       - uses: actions/upload-artifact@v4
         with:
-          name: PSEI_Entrevistas_v1_9
-          path: PSEI_Entrevistas_v1_9.apk
+          name: PSEI_Entrevistas_v1_10
+          path: PSEI_Entrevistas_v1_10.apk
