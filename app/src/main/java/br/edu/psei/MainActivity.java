@@ -1,4 +1,5 @@
 package br.edu.psei;
+import android.Manifest;
 import android.app.*;import android.os.*;import android.content.*;import android.content.pm.PackageManager;import android.media.*;import android.net.Uri;import android.widget.*;import android.view.*;import java.io.*;import java.util.*;import java.util.zip.*;import org.json.*;
 public class MainActivity extends Activity {
  EditText ins,nome,curso,banca,obs; EditText[] notas=new EditText[3]; TextView status; CheckBox ciencia; MediaRecorder rec; MediaPlayer player; File audio; boolean paused; String id; File dir; final String[] criterios={"Comunicação oral em português","Capacidade argumentativa","Interesse acadêmico"}; final double[] max={2,5,3};
